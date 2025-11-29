@@ -26,8 +26,7 @@ try {
                 LEFT JOIN pastores p ON p.id_pastor = tf.id_pastor
                 LEFT JOIN miembros m ON m.id_miembro = p.id_miembro
                 LEFT JOIN categorias_ingreso c ON c.id_categoria = tf.id_categoria
-                ORDER BY tf.creado_en DESC, tf.id_transaccion DESC
-                LIMIT 100";
+                ORDER BY tf.creado_en DESC, tf.id_transaccion DESC";
         
         $result = $conn->query($sql);
         
